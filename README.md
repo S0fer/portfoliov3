@@ -1,70 +1,28 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Version 3 of my portfolio
+This is my third attempt of making an interesting portfolio to help me get a job in web development.
+## There are several things I must accomplish with this attempt:
+ - [ ] Create/Research art and assets to be used in 
+ - [ ] Parallax Effect with non - interactible items - Just the logic;
+ - [ ] Parallax Effect with Interactible items ( Like a clickable div, or a div with a hover effect ) - Just the logic;
+ - [ ] Z-index on every object on screen `!important`;
+ - [ ] Interpolate z-index with the parallax effect;
+ - [ ] Gradient Effect on scrolling down on the page ( A gradient of sorts that shows how "deep" you are );
+ - [ ] Wave Effect on the middle of the landing page on screen;
+ - [ ] My Face on a boat, floating on top of the wave;
+ - [ ] A data .js file, that contains which kinds of interactible items will be in the water;
+ - [ ] A system to randomly asign the data into objects/divs on the page;
+ - [ ] A Life Buoy Icon with an animation to go to the start of the page;
+ - [ ] A fixed side bar with my Github, Linkedin, Whatsapp and email;
+ - [ ] A simple header, with a strong contrast with the page;
+ - [ ] A simple footer, with my Credentials and simple additional contact info;
+ - [ ] Corals on the sides (parallaxed) hiding more interactions;
+ - [ ] Treasure chest in the end of the page that reveals a bubble with one more chance to contact me;
+ - [ ] Add ocean sounds that change depending on how deep you are ( 2 to 3 different sounds) ;
+ - [ ] Add disable sound and disable animations buttons ( Disabled as default );
+ - [ ] Review typography;
+## Responsiveness Goals:
+ - [ ] Wave Responsiveness;
+ - [ ] Item Responsiveness;
+ - [ ] Sidebar disappear to use header space + fix header on page;
+ - [ ] Disable :hover effects while mobile ( performance );
+ - [ ] Add simple animations to interactible items to stand-out ( lack of hover effects );
