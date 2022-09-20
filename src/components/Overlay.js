@@ -6,7 +6,7 @@ import linkedin from "../images/linkedin-icon.svg"
 import wpp from "../images/wpp-icon.svg"
 export default function Overlay(props){
 
-    let test = props.info;
+    const test = props.info;
     return(
         <div className="overlay">
             <a href="https://github.com/S0fer" target="_blank" rel="noreferrer">

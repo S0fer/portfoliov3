@@ -11,3 +11,23 @@ header, footer{
   align-items: center;
   justify-content: center;
 }
+
+/* Start Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body{
+  overflow: overlay;
+}
+
+/* End Scrollbar */

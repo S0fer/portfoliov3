@@ -18,7 +18,7 @@ function App() {
       <header></header>
       <Overlay info={offsetY} />
       <Wave style={{transform: `translateY(${offsetY * 0.5}px)`}} />
-      <div style={{background: "#015871", height: "500vh", textAlign: "center", color: "white", fontSize: "2rem"}}>
+      <div style={{background: "linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,0,36,1) 50%, rgba(1,88,113,1) 100%)", height: "800vh", textAlign: "center", color: "white", fontSize: "2rem"}}>
         <p style={{postion: "fixed", padding: "50%"}}>{offsetY}</p>
       </div>
       <footer>

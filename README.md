@@ -4,7 +4,7 @@ This is my third attempt of making an interesting portfolio to help me get a job
  - [x] Create/Research art and assets to be used in 
  - [x] Parallax Effect logic;
  - [x] Wave Effect on the middle of the landing page on screen;
- - [ ] Gradient Effect on scrolling down on the page ( A gradient of sorts that shows how "deep" you are );
+ - [x] Gradient Effect on scrolling down on the page ( A gradient of sorts that shows how "deep" you are );
  - [x] My Face on a lifebuoy, floating on top of the waves;
  - [ ] A data.js file, that contains which kinds of interactible items will be in the water;
  - [ ] A system to randomly asign the data into objects/divs on the page;
