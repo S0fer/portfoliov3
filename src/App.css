@@ -35,3 +35,15 @@ body{
 }
 
 /* End Scrollbar */
+
+/* Responsive navbar */
+
+.mini{
+  margin: 10px;
+  background-color: white;
+}
+
+.mini *{
+  width: 100%;
+  aspect-ratio: 1;
+}

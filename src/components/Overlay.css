@@ -26,3 +26,17 @@
     height: 3vw;
     width: 3vw;
 }
+
+.hide{
+    display: none;
+}
+
+@media (max-width : 768px) {
+    .overlay {
+        display: none;
+    }
+    
+    .hide{
+        display: block;
+    }
+}
