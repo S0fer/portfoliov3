@@ -1,13 +1,14 @@
 # Version 3 of my portfolio
 This is my third attempt of making an interesting portfolio to help me get a job in web development.
 ## There are several things I must accomplish with this attempt:
- - [ ] Create/Research art and assets to be used in 
- - [ ] Parallax Effect with non - interactible items - Just the logic;
+ - [x] Create/Research art and assets to be used in 
+ - [x] Parallax Effect with non - interactible items - Just the logic;
+ - [x] Wave Effect on the middle of the landing page on screen;
+ - [ ] Fix Wave bug with `overflow-x:hidden` on body tag.
  - [ ] Parallax Effect with Interactible items ( Like a clickable div, or a div with a hover effect ) - Just the logic;
  - [ ] Z-index on every object on screen `!important`;
  - [ ] Interpolate z-index with the parallax effect;
  - [ ] Gradient Effect on scrolling down on the page ( A gradient of sorts that shows how "deep" you are );
- - [ ] Wave Effect on the middle of the landing page on screen;
  - [ ] My Face on a boat, floating on top of the wave;
  - [ ] A data .js file, that contains which kinds of interactible items will be in the water;
  - [ ] A system to randomly asign the data into objects/divs on the page;
