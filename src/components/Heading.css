@@ -1,0 +1,36 @@
+.box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: swell2 7s ease infinite;
+    z-index: 1;
+}
+
+.circular-photo{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 5px solid #C84146;
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: -40%;
+}
+
+.circular-lifebuoy{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: -40%;
+}
+
+
+@keyframes swell2{
+    0%, 100% {
+        transform: translate3d(0, -50px, 0);
+    }
+    50% {
+        transform: translate3d(0, 10px, 0);
+    }
+}

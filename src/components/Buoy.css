@@ -1,0 +1,24 @@
+.buoy{
+    border-radius: 50%;
+    display: flex;
+    height: 10vh;
+    aspect-ratio: 1;
+    position: fixed;
+    z-index: 1;
+    bottom: 2vh;
+    right: 2vw;
+    transition: 1s;
+}
+
+.buoy:hover{
+    animation: spin 2s;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

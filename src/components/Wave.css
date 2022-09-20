@@ -1,93 +1,84 @@
-body{
-    overflow-x: hidden;
-}
-
-.wave-container{
-    height: 90vh;
-    background-color: skyblue;
+.wrap{
+    height: 55vh;
+    background-color: powderblue;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: end;
     justify-content: center;
 }
 
-.ocean{
-    position: absolute;
-    height: 20%;
+.wave-container {
+    position: relative;
     width: 100%;
-    bottom: 0;
-    left: 0;
-    background: #015871;
-    box-shadow: 0 0 0 2px #015871;
+    align-self: flex-end;
+}
+.waves {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: -7px;
+    min-height: 200px;
+    max-height: 200px;
 }
 
-.wave{
-    background: url("../images/wave.svg") repeat-x;
-    position: absolute;
-    top: -198px;
-    width: 6400px;
-    height: 198px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+.parallax > use {
+    -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+            animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
 
-.wave:nth-of-type(2){
-    top: -175px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
-    swell 7s ease -1.25s infinite;
+.parallax > use:nth-child(1) {
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
 }
 
-@keyframes wave{
+.parallax > use:nth-child(2) {
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 13s;
+            animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    -webkit-animation-delay: -5s;
+            animation-delay: -5s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+}
+
+@-webkit-keyframes moveForever {
     0% {
-        margin-left: 0;
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
     }
-    100%{
-        margin-left: -1600px;
-    }
-}
-
-@keyframes swell{
-    0%, 100% {
-        transform: translate3d(0, -25px, 0);
-    }
-    50% {
-        transform: translate3d(0, 5px, 0);
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
     }
 }
 
-@keyframes swell2{
-    0%, 100% {
-        transform: translate3d(0, -50px, 0);
+@keyframes moveForever {
+    0% {
+        -webkit-transform: translate3d(-90px, 0, 0);
+                transform: translate3d(-90px, 0, 0);
     }
-    50% {
-        transform: translate3d(0, 10px, 0);
+    100% {
+        -webkit-transform: translate3d(85px, 0, 0);
+                transform: translate3d(85px, 0, 0);
     }
 }
 
-/* Responsivity note: remove animations "wave, swell" and add 100% to width of wave */
-
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: swell2 7s ease infinite;
-}
-
-.box > img{
-    margin: -40%;
-}
-
-.circular-photo{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border: 5px solid #C84146;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.circular-lifebuoy{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    z-index: 0;
+@media (max-width : 768px) {
+    .waves {
+        height: 80px;
+        min-height: 80px;
+    }
 }

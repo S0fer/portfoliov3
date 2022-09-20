@@ -1,0 +1,7 @@
+.sea{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(1,88,113,1) 75%, rgba(0,172,222,1) 100%);
+    height: 800vh;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}

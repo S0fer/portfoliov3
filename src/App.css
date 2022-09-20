@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 header, footer{
   display: flex;
   min-height: 5vh;
