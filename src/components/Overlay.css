@@ -1,0 +1,28 @@
+.overlay {
+    align-items: center;
+    background-color: #C84146;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+    margin-top: 30vh;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    position: fixed;
+    width: 4.2vw;
+    z-index: 1;
+}
+
+.social-icon:not(:hover) {
+    height: 3vw;
+    transition: .16s;
+    width: 3vw;
+}
+
+.social-icon {
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+}
