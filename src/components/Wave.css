@@ -3,7 +3,7 @@
     background-color: powderblue;
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
 }
 
