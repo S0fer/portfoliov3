@@ -46,7 +46,8 @@ function App() {
       <Wave />
       <Sea data={offsetY} />
       <footer>
-        <div>© 2022. Todos os direitos reservados.</div>
+        <p>Desenvolvido por João Pedro Alarcón Duarte - (51) 99414-8603</p>
+        <p>© 2022. Todos os direitos reservados.</p>
       </footer>
     </div>
   );

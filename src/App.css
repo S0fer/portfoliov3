@@ -1,19 +1,31 @@
 * {
   padding: 0;
   margin: 0;
+  line-height: 1.6rem;
 }
 
 html{
   scroll-behavior: smooth;
 }
 
-header, footer{
+header{
   display: flex;
   min-height: 5vh;
   background-color: skyblue;
   color: #152444;
   align-items: center;
   justify-content: center;
+}
+
+footer{
+  padding: 15px;
+  display: flex;
+  min-height: 5vh;
+  background-color: rgb(38, 49, 55);
+  color: #fcfcfc;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Start Scrollbar */
@@ -35,14 +47,3 @@ body{
 }
 
 /* End Scrollbar */
-
-/* Responsive navbar */
-
-.mini{
-  margin: 10px;
-}
-
-.mini *{
-  width: 100%;
-  aspect-ratio: 1;
-}

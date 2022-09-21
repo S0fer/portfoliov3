@@ -1,8 +1,8 @@
 .overlay {
     align-items: center;
     background-color: #C84146;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     display: flex;
     flex-direction: column;
     height: 40vh;
@@ -11,20 +11,24 @@
     padding-bottom: 0.5vw;
     padding-top: 0.5vw;
     position: fixed;
-    width: 4.2vw;
+    width: 3.8vw;
     z-index: 1;
+    box-shadow: 0px 0px 8px 6px #FF5050;
+    transition: .6s;
 }
 
-.social-icon:not(:hover) {
-    height: 3vw;
-    transition: .16s;
-    width: 3vw;
+.overlay:hover{
+    width: 5.6vw;
 }
 
 .social-icon {
     border-radius: 50%;
-    height: 3vw;
-    width: 3vw;
+    width: 2.8vw;
+    aspect-ratio: 1;
+}
+
+.social-icon:hover{
+    box-shadow: 0px 0px 4px 3px skyblue;
 }
 
 .hide{
@@ -38,5 +42,20 @@
     
     .hide{
         display: block;
+    }
+
+    .social-icon {
+        width: 9vw;
+        margin: 15px;
+    }
+
+    .social-icon:hover{
+        box-shadow: 0px 0px 4px 3px #015781;
+    }
+
+    header{
+        position: fixed;
+        z-index: 5;
+        width: 100%;
     }
 }

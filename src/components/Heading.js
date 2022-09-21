@@ -1,6 +1,6 @@
 import React from "react"
 import "./Heading.css"
-import photo from "../images/circular.jpg"
+import photo from "../images/frame.jpeg"
 import life from "../images/lifebuoy.svg"
 export default function Heading(){
     return(

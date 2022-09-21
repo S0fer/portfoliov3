@@ -1,9 +1,9 @@
 import React from "react"
 import "./Buoy.css"
-import life from "../images/lifebuoy.svg"
+import arrow from "../images/lifebuoy-arrow.svg"
 export default function Buoy(){
     return(
         <a className="buoy" href="#top">
-            <img src={life} alt="buoy" />
+            <img src={arrow} alt="buoy" />
         </a>
 )}
