@@ -10,8 +10,8 @@ html{
 header, footer{
   display: flex;
   min-height: 5vh;
-  background-color: #152444;
-  color: #fcfcfc;
+  background-color: skyblue;
+  color: #152444;
   align-items: center;
   justify-content: center;
 }
@@ -40,7 +40,6 @@ body{
 
 .mini{
   margin: 10px;
-  background-color: white;
 }
 
 .mini *{
