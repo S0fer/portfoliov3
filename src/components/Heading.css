@@ -34,3 +34,34 @@
         transform: translate3d(0, 10px, 0);
     }
 }
+
+.box p {
+    position: relative;
+    max-width: 20em;
+    background-color: #fff;
+    padding: 1.125em 1.5em;
+    font-size: .5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+  
+.box p::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 1.5em;
+    border: 0.75rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+.box *:hover{
+    cursor: pointer;
+}
+
+.box p img{
+    width: 15px;
+    aspect-ratio: 1;
+}

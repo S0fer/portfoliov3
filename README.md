@@ -13,11 +13,13 @@ This is my third attempt of making an interesting portfolio to help me get a job
  - [x] A simple header, with a strong contrast with the page;
  - [x] A simple footer, with my Credentials and simple additional contact info;
  - [x] Create a Modal component to overlay the screen when touched;
- - [ ] Create a simple reusable component that can get information from both datasets to create interactible objects;
- - [ ] Corals on the sides (parallaxed) hiding more interactions;
- - [ ] Treasure chest in the end of the page that reveals a bubble with one more chance to contact me;
- - [ ] Add ocean sounds that change depending on how deep you are ( 2 to 3 different sounds) ;
- - [ ] Add disable sound and disable animations buttons ( Disabled as default );
+ - [x] Create a simple reusable component that can get information from both datasets to create interactible objects;
+ - [x] Corals on the bottom of the page;
+ - [ ] Add a simple content section to have without the modals;
+ - [x] Add interactible items in the background that open the modal;
+ - [ ] Diversify the items;
+ - [ ] Animate the items;
+ - [x] Add language change button;
  - [ ] Review typography;
 ## Responsiveness Goals:
  - [x] Wave Responsiveness;

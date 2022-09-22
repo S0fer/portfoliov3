@@ -18,6 +18,7 @@ function App() {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.scrollY);
   const [modalIsOpen,setModalIsOpen] = useState(false);
+  const [english,setEnglish] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -50,11 +51,11 @@ function App() {
       </header>
       <Navbar />
       <Buoy />
-      <Wave />
-      <Sea data={offsetY} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
+      <Wave english={english} setEnglish={setEnglish} />
+      <Sea data={offsetY} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} english={english} />
       <footer>
-        <p>Desenvolvido por João Pedro Alarcón Duarte - (51) 99414-8603</p>
-        <p>© 2022. Todos os direitos reservados.</p>
+        <p>{english?"Developed by":"Desenvolvido por"} João Pedro Alarcón Duarte - (51) 99414-8603</p>
+        <p>© 2022. {english?"All rights reserved.":"Todos os direitos reservados."}</p>
       </footer>
     </div>
   );

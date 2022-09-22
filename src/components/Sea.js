@@ -33,12 +33,13 @@ export default function Sea(props){
                 <h3>Front End Developer</h3>
             </div>
                 {itemArray}
-            <MyModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} modalData={modalData} />
+            <MyModal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} modalData={modalData} english={props.english} />
 
             <img src={corals} alt="corals" style={{
                 position: "absolute",
                 bottom: "0",
                 maxWidth: "100%",
+                filter: "saturate(40%)",
             }} />
         </div>
 )}

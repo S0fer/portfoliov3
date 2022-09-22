@@ -5,6 +5,7 @@ export default function MyModal(props){
     const modalIsOpen = props.modalIsOpen;
     const setModalIsOpen = props.setModalIsOpen;
     const modalData = props.modalData;
+    const english = props.english;
 
     const setModalIsOpenToFalse =()=>{
         setModalIsOpen(false)
@@ -30,13 +31,12 @@ export default function MyModal(props){
             <Modal isOpen={modalIsOpen} style={modalStyle} onRequestClose={setModalIsOpenToFalse} shouldCloseOnOverlayClick={true} closeTimeoutMS={1000}>
                 <div className="modalFilter">
                     <div className="innerContent">
-                        <img src={modalData.icon} alt="react" style={{}} className="modalImg" />
+                        <img src={modalData.icon} alt="react" className="modalImg" />
                         <div className="innerFlex">
                             <h1>{modalData.name}</h1>
-                            <p>{modalData.description}</p>
                             <div className="bar">
                                 <div className="label">
-                                    <span>Proficiência:</span>
+                                    <span>{english ? "Proficiency:" : "Proficiência:"}</span>
                                 </div>
                                 <div className="progress-line"><span style={{width: `${modalData.level}`,}}></span></div>
                             </div>
