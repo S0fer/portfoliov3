@@ -1,13 +1,10 @@
 import React from "react"
 import "./MyModal.css"
 import Modal from "react-modal"
-import Item from "./Item";
 export default function MyModal(props){
     const modalIsOpen = props.modalIsOpen;
     const setModalIsOpen = props.setModalIsOpen;
-    const setModalIsOpenToTrue =()=>{
-        setModalIsOpen(true)
-    }
+    const modalData = props.modalData;
 
     const setModalIsOpenToFalse =()=>{
         setModalIsOpen(false)
@@ -30,12 +27,20 @@ export default function MyModal(props){
 
     return(
         <>
-            <Item setModalIsOpenToTrue={setModalIsOpenToTrue} />
-
             <Modal isOpen={modalIsOpen} style={modalStyle} onRequestClose={setModalIsOpenToFalse} shouldCloseOnOverlayClick={true} closeTimeoutMS={1000}>
                 <div className="modalFilter">
-                    <div>
-
+                    <div className="innerContent">
+                        <img src={modalData.icon} alt="react" style={{}} className="modalImg" />
+                        <div className="innerFlex">
+                            <h1>{modalData.name}</h1>
+                            <p>{modalData.description}</p>
+                            <div className="bar">
+                                <div className="label">
+                                    <span>Proficiência:</span>
+                                </div>
+                                <div className="progress-line"><span style={{width: `${modalData.level}`,}}></span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Modal>
