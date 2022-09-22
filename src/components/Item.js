@@ -11,7 +11,7 @@ export default function Item(props){
     }
 
     return(
-        <div onClick={setIndex}>
+        <div onClick={setIndex} className="itemBorder">
             <img  className="item" alt="item" onClick={setModalIsOpenToTrue} src={photo} />
         </div>
 )}

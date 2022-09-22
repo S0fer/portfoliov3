@@ -15,7 +15,7 @@ This is my third attempt of making an interesting portfolio to help me get a job
  - [x] Create a Modal component to overlay the screen when touched;
  - [x] Create a simple reusable component that can get information from both datasets to create interactible objects;
  - [x] Corals on the bottom of the page;
- - [ ] Add a simple content section to have without the modals;
+ - [x] Add a simple content section to have without the modals;
  - [x] Add interactible items in the background that open the modal;
  - [ ] Diversify the items;
  - [ ] Animate the items;

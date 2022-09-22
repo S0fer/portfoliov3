@@ -134,7 +134,7 @@
 
 .bar .progress-line{
   position: relative;
-  height: 15px;
+  height: 10px;
   width: 100%;
   border-radius: 10px;
   background: rgb(210, 185, 146);

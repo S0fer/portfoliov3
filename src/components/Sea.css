@@ -1,18 +1,51 @@
 .sea{
     background: linear-gradient(0deg, rgb(25, 33, 38) 5%, rgba(1,88,113,1) 60%, rgba(0,172,222,1) 100%);
     position: relative;
-    height: 500vh;
     text-align: center;
-    color: white;
+    color: #fcfcfc;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     padding-top: 5%;
+    padding-bottom: 250px;
 }
 
-.sea *{
+.sea > *{
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+main{
+    border: 2px solid #ded9ce;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 5px 1px #ded9ce,
+                0px 0px 5px 1px #ded9ce;
+    filter: drop-shadow(20px 15px 5px rgba(38, 53, 123, 0.6));
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.mainSkills{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 200px);
+    padding: 2%;
+}
+
+.mainSkillImg{
+    width: 6vw;
+}
+
+@media screen and (max-width: 750px) {
+    .sea{
+        padding-bottom: 100px;
+    }
+    .mainSkillImg{
+        width: 20vw;
+    }
 }
