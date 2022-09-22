@@ -1,7 +1,9 @@
 import './App.css';
 import Wave from './components/Wave';
 import { useEffect, useState } from "react";
-import Overlay from './components/Overlay';
+import ReactModal from 'react-modal';
+
+import Navbar from './components/Navbar';
 import Sea from './components/Sea';
 import Buoy from './components/Buoy';
 
@@ -10,9 +12,12 @@ import gmail from "./images/gmail-icon.svg"
 import linkedin from "./images/linkedin-icon.svg"
 import wpp from "./images/wpp-icon.svg"
 
+ReactModal.setAppElement('#root');
+
 function App() {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.scrollY);
+  const [modalIsOpen,setModalIsOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -20,8 +25,10 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [])
 
+  const fixModal = modalIsOpen? 'fixModal' : ''
+
   return (
-    <div className='wrapper'>
+    <div className={`wrapper ${fixModal}`}>
       <header>
         <div className='hide'>
             <a href="https://github.com/S0fer" target="_blank" rel="noreferrer">
@@ -41,10 +48,10 @@ function App() {
             </a>
         </div>
       </header>
-      <Overlay />
+      <Navbar />
       <Buoy />
       <Wave />
-      <Sea data={offsetY} />
+      <Sea data={offsetY} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
       <footer>
         <p>Desenvolvido por João Pedro Alarcón Duarte - (51) 99414-8603</p>
         <p>© 2022. Todos os direitos reservados.</p>

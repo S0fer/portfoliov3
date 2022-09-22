@@ -12,7 +12,7 @@ This is my third attempt of making an interesting portfolio to help me get a job
  - [x] A fixed side bar with my Github, Linkedin, Whatsapp and email;
  - [x] A simple header, with a strong contrast with the page;
  - [x] A simple footer, with my Credentials and simple additional contact info;
- - [ ] Create a Modal component to overlay the screen when touched (don't forget the X button);
+ - [x] Create a Modal component to overlay the screen when touched;
  - [ ] Create a simple reusable component that can get information from both datasets to create interactible objects;
  - [ ] Corals on the sides (parallaxed) hiding more interactions;
  - [ ] Treasure chest in the end of the page that reveals a bubble with one more chance to contact me;
@@ -22,7 +22,7 @@ This is my third attempt of making an interesting portfolio to help me get a job
 ## Responsiveness Goals:
  - [x] Wave Responsiveness;
  - [x] Sidebar disappear to use header space + fix header on page;
- - [ ] Item Responsiveness;
+ - [x] Item Responsiveness;
 ## Bugfixes:
  - [x] Fix Wave bug with `overflow-x:hidden` on body tag (mobile).
  - [x] Fix Gmail Icon and make hover effects on overlay.

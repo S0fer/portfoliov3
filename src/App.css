@@ -47,3 +47,14 @@ body{
 }
 
 /* End Scrollbar */
+
+/* Fix Modal */
+.fixModal .box,
+.fixModal .navbar,
+.fixModal .buoy{
+  z-index: auto;
+}
+
+.fixModal .waves{
+  content: "";
+}

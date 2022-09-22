@@ -1,4 +1,4 @@
-.overlay {
+.navbar {
     align-items: center;
     background-color: #C84146;
     border-bottom-right-radius: 10px;
@@ -17,7 +17,7 @@
     transition: .6s;
 }
 
-.overlay:hover{
+.navbar:hover{
     width: 5.6vw;
 }
 
@@ -36,7 +36,7 @@
 }
 
 @media (max-width : 768px) {
-    .overlay {
+    .navbar {
         display: none;
     }
     
@@ -46,7 +46,7 @@
 
     .social-icon {
         width: 9vw;
-        margin: 15px;
+        margin: 8px 10px 4px;
     }
 
     .social-icon:hover{

@@ -1,0 +1,8 @@
+.item{
+  max-width: 10vh;
+}
+
+.item:hover{
+  cursor: pointer;
+  outline: 1px white;
+}
