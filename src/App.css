@@ -62,9 +62,15 @@ body{
 .fixModal .box,
 .fixModal .navbar,
 .fixModal .buoy{
-  z-index: auto;
+  display: none;
 }
 
 .fixModal .waves{
   content: "";
+}
+
+@media screen and (max-width: 750px) {
+  .fixModal header{
+    display: none;
+  }
 }

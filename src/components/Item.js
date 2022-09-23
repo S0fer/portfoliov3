@@ -1,6 +1,5 @@
 import React from "react"
 import "./Item.css"
-import photo from '../images/message-in-a-bottle.svg'
 export default function Item(props){
     const setModalIsOpenToTrue = props.setModalIsOpenToTrue;
     const dataArray = props.array;
@@ -12,6 +11,6 @@ export default function Item(props){
 
     return(
         <div onClick={setIndex} className="itemBorder">
-            <img  className="item" alt="item" onClick={setModalIsOpenToTrue} src={photo} />
+            <img  className="item" alt="item" onClick={setModalIsOpenToTrue} src={dataArray.animal} />
         </div>
 )}
