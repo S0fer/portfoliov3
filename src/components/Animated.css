@@ -10,6 +10,7 @@
     filter: blur(2px);
     width: 700px;
     animation: swim 21s infinite;
+    transform: translateX(-160%);
 }
 
 .imgContainer{
