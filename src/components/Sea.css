@@ -10,6 +10,7 @@
     overflow: hidden;
     padding-top: 5%;
     padding-bottom: 250px;
+    margin-top: -2%;
 }
 
 .sea > *{
@@ -25,10 +26,11 @@ main{
     border-radius: 15px;
     box-shadow: inset 0px 0px 5px 1px #ded9ce,
                 0px 0px 5px 1px #ded9ce;
-    filter: drop-shadow(20px 15px 5px rgba(38, 53, 123, 0.6));
+    filter: drop-shadow(20px 15px 5px rgba(0, 0, 0, 0.2));
     margin-top: 3%;
     margin-bottom: 3%;
     padding: 5%;
+    z-index:5;
 }
 
 main > *{
@@ -68,6 +70,6 @@ main > *{
         padding-bottom: 100px;
     }
     .mainSkillImg{
-        width: 20vw;
+        width: 35vw;
     }
 }

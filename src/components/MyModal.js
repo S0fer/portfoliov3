@@ -33,10 +33,10 @@ export default function MyModal(props){
                     <div className="innerContent">
                         <img src={modalData.icon} alt="react" className="modalImg" />
                         <div className="innerFlex">
-                            <h1>{modalData.name}</h1>
+                            <h1 style={{fontFamily:'Dancing Script'}}>{modalData.name}</h1>
                             <div className="bar">
                                 <div className="label">
-                                    <span>{english ? "Proficiency:" : "Proficiência:"}</span>
+                                    <span style={{fontFamily:'Dancing Script'}}>{english ? "Proficiency:" : "Proficiência:"}</span>
                                 </div>
                                 <div className="progress-line"><span style={{width: `${modalData.level}`,}}></span></div>
                             </div>

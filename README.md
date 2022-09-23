@@ -18,7 +18,7 @@ This is my third attempt of making an interesting portfolio to help me get a job
  - [x] Add a simple content section to have without the modals;
  - [x] Add interactible items in the background that open the modal;
  - [x] Diversify the items;
- - [ ] Animate the items;
+ - [x] Animate the items;
  - [x] Add language change button;
  - [ ] Review typography;
 ## Responsiveness Goals:
