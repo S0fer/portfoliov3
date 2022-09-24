@@ -77,8 +77,11 @@
 }
 
 @media (max-width : 768px) {
+    .wrap{
+        height: 65vh;
+    }
     .waves {
-        height: 80px;
-        min-height: 80px;
+        height: 120px;
+        min-height: 120px;
     }
 }

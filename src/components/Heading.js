@@ -1,9 +1,8 @@
 import React from "react"
 import "./Heading.css"
-import photo from "../images/frame.jpeg"
-import life from "../images/lifebuoy.svg"
 import eng from "../images/eng.svg"
 import br from "../images/br.svg"
+import buoyImg from "../images/buoyImg.svg"
 export default function Heading(props){
     const english = props.english;
     const setEnglish = props.setEnglish;
@@ -12,8 +11,7 @@ export default function Heading(props){
     }
     return(
         <div className="box" onClick={handleClick}>
-            <img src={life} alt="circular" className="circular-lifebuoy" />
-            <img src={photo} alt="circular" className="circular-photo" />
+            <img src={buoyImg} alt="circular" className="circular-lifebuoy" />
             <p>
                 {english ? "Click me to change languages! " : "Clique aqui para trocar a língua! "}
                 <img src={english ? eng : br} alt="flag"/>

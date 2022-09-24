@@ -6,15 +6,18 @@
     height: 100%;
 }
 
+.animated *{
+    position: relative;
+}
+
 .animated .imgContainer img{
-    filter: blur(2px);
-    width: 700px;
-    animation: swim 21s infinite;
-    transform: translateX(-160%);
+    filter: blur(0.5px);
+    animation: swim 28s infinite;
+    transform: translateX(-200vw);
 }
 
 .imgContainer{
-    animation: wobble 9s infinite;
+    animation: wobble 6s infinite;
 }
 
 .imgContainer:nth-child(2), .imgContainer:nth-child(2) img{
@@ -26,15 +29,35 @@
 }
 
 .imgContainer:nth-child(3){
-    animation: wobbleHard 9s infinite;
+    animation: wobbleHard 6s infinite;
+}
+
+.turtle{
+    animation: wobble 6s infinite;
+}
+
+.turtle img{
+    animation-delay: 6s;
+}
+
+.turtle:nth-child(2), .turtle:nth-child(2) img{
+    animation-delay: 2s;
+}
+
+.turtle:nth-child(3), .turtle:nth-child(3) img{
+    animation-delay: .5s;
+}
+
+.turtle:nth-child(3){
+    animation: wobbleHard 6s infinite;
 }
 
 @keyframes swim{
     0%{
-        transform: translateX(-160%);
+        transform: translateX(-200vw);
     }
     100%{
-        transform: translateX(160%);
+        transform: translateX(200vw);
     }
 }
 
@@ -52,6 +75,51 @@
         transform: translateY(-100%);
     }
     50%{
-        transform: translateY(15%);
+        transform: translateY(-50%);
+    }
+}
+
+.shoal{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shoalContainer{
+    animation: shoalSwim 2s infinite;    
+}
+
+.shoalContainer:nth-child(2), .shoal:nth-child(2) img{
+    animation-delay: 1.5s;
+}
+
+.shoalContainer:nth-child(3){
+    animation-duration: 4s;
+    animation-delay: 1.3s;
+}
+
+.shoalContainer:nth-child(5), .shoal img{
+    animation-delay: 7s;
+}
+
+.shoalContainer:nth-child(4){
+    animation-duration: 6s;
+    animation-delay: .6s;
+}
+
+.shoalContainer{
+    min-height: 10vh;
+}
+
+.shoal:nth-child(3) img{
+    animation-delay: 14s;
+}
+
+@keyframes shoalSwim{
+    0%, 100%{
+        transform: translateY(-60%);
+    }
+    50%{
+        transform: translateY(60%);
     }
 }
