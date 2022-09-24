@@ -91,7 +91,13 @@
 }
 
 .innerContent img{
-  width: 40%;
+  width: 40px;
+  padding: 1%;
+}
+
+.innerContent h1{
+  display: flex;
+  align-items: center;
 }
 
 .innerFlex{
@@ -99,22 +105,15 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2%;
-  min-width: 45%;
+  min-width: 75%;
 }
 
 @media screen and (max-width:730px) {
   .innerContent{
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
-  .innerContent img{
-    align-self: center;
-    width: 60%;
-    padding-top: 20px;
-  }
-}
-
-.bar{
-  margin: 20px 0;
 }
 
 .bar:first-child{

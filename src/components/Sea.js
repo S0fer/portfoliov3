@@ -54,13 +54,17 @@ export default function Sea(props){
             <Animated fish={dori} fishClass={"dori"} size={[20, 15, 30]} isShoal={true} />
 
             <main>
-                <h2>{english ? "Hello, visitor!" : "Olá, visitante!"}</h2>
-                <div className="mainIntroduction">
-                    <p>{english ? textData[0].text : textData[1].text}</p>
+                <div className="main">
+                    <h2>{english ? "Hello, visitor!" : "Olá, visitante!"}</h2>
+                    <div className="mainIntroduction">
+                        <p style={{fontSize: '.9rem'}}>{english ? textData[0].text : textData[1].text}</p>
+                    </div>
                 </div>
-                <h2>{english ? "Skills" : "Habilidades"}</h2>
-                <div className="mainSkills">
-                    {mainContent}
+                <div className="main">
+                    <h2>{english ? "Skills" : "Habilidades"}</h2>
+                    <div className="mainSkills">
+                        {mainContent}
+                    </div>
                 </div>
             </main>
 

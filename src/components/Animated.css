@@ -13,7 +13,13 @@
 .animated .imgContainer img{
     filter: blur(0.5px);
     animation: swim 28s infinite;
-    transform: translateX(-200vw);
+    transform: translateX(-250vw);
+}
+
+.animated .whale img{
+    filter: blur(0.5px);
+    animation: swimWhale 28s infinite;
+    transform: translateX(-280%);
 }
 
 .imgContainer{
@@ -48,16 +54,25 @@
     animation-delay: .5s;
 }
 
-.turtle:nth-child(3){
+.imgContainer:nth-child(3){
     animation: wobbleHard 6s infinite;
 }
 
 @keyframes swim{
     0%{
-        transform: translateX(-200vw);
+        transform: translateX(-250vw);
     }
     100%{
-        transform: translateX(200vw);
+        transform: translateX(150vw);
+    }
+}
+
+@keyframes swimWhale{
+    0%{
+        transform: translateX(-280%);
+    }
+    100%{
+        transform: translateX(280%);
     }
 }
 
